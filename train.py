@@ -84,3 +84,11 @@ def main(_):
 
 if __name__ == '__main__':
     tf.app.run()
+      begin_char = input('## （输入 quit 退出）请输入第一个字 please input the first character: ')
+    if begin_char == 'quit':
+        exit() 
+    poem = gen_poem(begin_char)
+    pretty_print_poem(poem_=poem)
+    ## （输入 quit 退出）请输入第一个字 please input the first character:  喔
+    ## loading corpus from ./model/
+    INFO:tensorflow:Restoring parameters from ./model/poems-125
